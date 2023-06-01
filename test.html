@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Module 1 JavaScript : Dragon Slayer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Germania+One" rel="stylesheet">
+    <link rel="stylesheet" href="css/dragon-slayer.css">
+
+    <!-- Fonctions utilitaires -->
+    <script src="js/utilities.js"></script>
+
+</head>
+<body>
+<header>
+    <h1>Dragon slayer</h1>
+    <p>Le dernier combat javaScript du Module 1</p>
+</header>
+<main>
+    <div class="game">
+        <h2>Que la fête commence !!</h2>
+
+        <!-- Etat du jeu -->
+        <div class="game-state">
+            <figure class="game-state_player">
+                <img src="images/knight.png" alt="Chevalier">
+                <figcaption>124 PV</figcaption>
+            </figure>
+            <figure class="game-state_player">
+                <img src="images/dragon.png" alt="Dragon">
+                <figcaption>135 PV</figcaption>
+            </figure>
+        </div>
+
+        <!-- Journal de la partie - TOUR N°1 -->
+        <h3>Tour n°1</h3>
+        <figure class="game-round">
+            <img src="images/knight-winner.png" alt="Chevalier vainqueur">
+            <figcaption>Vous êtes le plus rapide, vous attaquez le dragon et lui infligez 30 points de dommage !</figcaption>
+        </figure>
+        <!-- Etat du jeu -->
+        <div class="game-state">
+            <figure class="game-state_player">
+                <img src="images/knight.png" alt="Chevalier">
+                <figcaption>124 PV</figcaption>
+            </figure>
+            <figure class="game-state_player">
+                <img src="images/dragon.png" alt="Dragon">
+                <figcaption>105 PV</figcaption>
+            </figure>
+        </div>
+        <!-- Journal de la partie - TOUR N°2 -->
+        <h3>Tour n°2</h3>
+        <figure class="game-round">
+            <img src="images/dragon-winner.png" alt="Dragon vainqueur">
+            <figcaption>Le dragon prend l'initiative, vous attaque et vous inflige 10 points de dommage !</figcaption>
+        </figure>
+        <!-- Etat du jeu -->
+        <div class="game-state">
+            <figure class="game-state_player">
+                <img src="images/knight.png" alt="Chevalier">
+                <figcaption>114 PV</figcaption>
+            </figure>
+            <figure class="game-state_player">
+                <img src="images/dragon.png" alt="Dragon">
+                <figcaption>105 PV</figcaption>
+            </figure>
+        </div>
+        <!--
+          Et ainsi de suite
+          Tour n°3
+          Tour n°4
+          ..........
+       -->
+        <h3>Tour n°3</h3>
+        <h3>Tour n°4</h3>
+        <h3>........</h3>
+        <!-- Journal de la partie - TOUR N°18 -->
+        <h3>Tour n°18</h3>
+        <figure class="game-round">
+            <img src="images/dragon-winner.png" alt="Dragon vainqueur">
+            <figcaption>Le dragon prend l'initiative, vous attaque et vous inflige 5 points de dommage !</figcaption>
+        </figure>
+        <!-- Etat du jeu : différence affichage VOIR BONUS -->
+        <div class="game-state">
+            <figure class="game-state_player">
+                <img src="images/knight-wounded.png" alt="Chevalier battu">
+                <figcaption>
+                    <progress max="124" value="25"></progress>
+                    25 PV
+                </figcaption>
+            </figure>
+            <figure class="game-state_player">
+                <img src="images/dragon-winner.png" alt="Dragon vainqueur">
+                <figcaption>
+                    <progress max="135" value="50"></progress>
+                    50 PV
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Journal de la partie - TOUR N°19 -->
+        <h3>Tour n°19</h3>
+        <figure class="game-round">
+            <img src="images/dragon-winner.png" alt="Dragon vainqueur">
+            <figcaption>Le dragon prend l'initiative, vous attaque et vous inflige 26 points de dommage !</figcaption>
+        </figure>
+        <!-- Etat du jeu : seul le dragon a encore des points de vie -->
+        <div class="game-state">
+            <figure class="game-state_player">
+                <img src="images/knight-wounded.png" alt="Chevalier battu">
+                <figcaption>Game Over</figcaption>
+            </figure>
+            <figure class="game-state_player">
+                <img src="images/dragon-winner.png" alt="Dragon vainqueur">
+                <figcaption>50 PV</figcaption>
+            </figure>
+        </div>
+        <footer>
+            <h3>Fin de la partie</h3>
+            <figure class="game-end">
+                <figcaption>Vous avez perdu le combat, le dragon vous a carbonisé !</figcaption>
+                <img src="images/dragon-winner.png" alt="Dragon vainqueur">
+            </figure>
+        </footer>
+    </div>
+</main>
+<img src="images/cloud1.png" alt="" id="cloud1" class="cloud">
+<img src="images/cloud2.png" alt="" id="cloud2" class="cloud">
+</body>
+</html>
